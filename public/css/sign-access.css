@@ -1,0 +1,136 @@
+/* FOLHA DE ESTILOS ESPECÍFICA PARA ELEMENTOS EXISTENTES NA PÁGINA "sign-access.html" */
+
+@font-face {
+    font-family: "SF-Pro";
+    src: url("SF-Pro-Display-Black.otf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+.container {
+    max-width: 480px;
+    width: 90vw;
+    height: fit-content;
+    margin: 8rem auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 70px 0 70px 0;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    inset: 0;
+    
+    h1 {
+        margin: 0.5rem auto 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: #f6f6f9;
+        text-shadow: 0.1em 0.1em 0.2em #313677;
+        border-bottom: 1px solid;
+        box-shadow: 0 4px 2px -2px rgb(218, 218, 218, 0.75);
+        font-size: 2rem;
+    }
+}
+
+.form {
+    margin-bottom: 2rem;
+}
+
+.form label,
+input {
+    display: block;
+    width: 100%;
+}
+
+.form label {
+    margin-bottom: 2px;
+    color: #f6f6f9;
+    font-size: 18px;
+    text-shadow: 0.1em 0.1em 0.2em #313677;
+}
+
+.form input {
+    color: #113b93;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+
+    &[type="text"],
+    &[type="password"] {
+        &:focus {
+            box-shadow: #c9e1fc 0 0 20px;
+            transition: all 0.3s ease-out;
+        }
+        &::placeholder {
+            text-shadow: 0.05em 0.05em 0.1em #9fb7ec;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.form a {
+    width: 100%;
+    background: #f6f6f9;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.form-btn {
+    width: 100%;
+    background-image: linear-gradient(93deg, #3f9ce9 10%, #64b0ea 50%, #3f9ce9 80%);
+    box-sizing: border-box;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    font-size: 16px;
+    height: 4rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: #27a0e9 0 1px 20px;
+        font-weight: bold;
+    }
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    a {
+        color: #f6f6f9;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
