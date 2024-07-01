@@ -1,10 +1,12 @@
 // Bibliotecas & módulos utilizados
+import express from 'express';
 const express = require("express");
 const app = express();
 const database = require("./database/db.js");
 const routes = require("./routes/routes.js");
 
 // JWT
+import jwt from 'jsonwebtoken';
 const jwt = require("jsonwebtoken");
 
 // Modelos
