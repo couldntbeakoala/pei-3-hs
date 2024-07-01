@@ -1,7 +1,7 @@
 {
-  "name": "nodejs",
+  "name": "pei-3-hs",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Sobre o projeto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "axios": "^0.21.1",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7"
-  },
-  "scripts": {
-    "start": "node index.js"
   }
 }
