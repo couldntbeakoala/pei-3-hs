@@ -1,4 +1,7 @@
+import { Sequelize } from 'sequelize';
 const Sequelize = require("sequelize");
+
+import sqlite3 from 'sqlite3';
 
 const sequelize = new Sequelize ({
   dialect: "sqlite",
