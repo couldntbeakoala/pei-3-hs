@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- PÁGINA PRINCIPAL DO SITE EM SI -->
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Página principal</title>
+    </head>
+    <body>
+
+        <!-- 
+        O que estiver com a classe "mobile" só aparece no mobile (especificado, no caso, como telas com largura menor que 1020px)
+        O que estiver com a classe "desktop" só aparece no desktop (especificado, no caso, como telas com largura maior que 1020px)
+        Caso haja necessidade de ajuste, observar o media query (@media...) no CSS.
+        -->
+
+        <div class="nav" id="nav-desktop">
+            <!-- Abrir modal (barra de navegação para telas menores) em barra de navegação adaptada para telas maiores -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-open">...</strong>
+            </div>
+            <ul class="nav-list desktop">
+                <li><a class="active" href="#">Página principal</a></li>
+                <li><a class="sign-in" href="/sign-in.html">Entrar</a></li>
+            <!-- <li><a class="home" href="/home.html">Home</a></li> -->
+            <!-- Adicionar interação caso a pessoa esteja conectada, "Entrar" dará lugar para "Home" -->
+            </ul>
+            <h1>HidroSmart</h1>
+        </div>
+
+        <div class="mobile closed" id="nav-mobile">
+            <!-- Fechar modal (barra de navegação para telas menores) -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-close">X</strong>
+            </div>
+            <!-- Modal que aparecerá ao ser aberto -->
+            <div class="dropdownMenu" id="dropdownMenu">
+                <h1>HidroSmart</h1>
+                <ul class="nav-list mobile" id="dropdown-content">
+                    <li><a class="active" href="#">Página principal</a></li>
+                    <li><a class="sign-in" href="/sign-in.html">Entrar</a></li>
+                    <!-- <li><a class="home" href="/home.html">Home</a></li> -->
+                    <!-- Adicionar interação caso a pessoa esteja conectada, "Entrar" dará lugar para "Home" -->
+                </ul>
+             </div>
+        </div>
+        <div class="container">
+            <h1>Sobre</h1>
+            <p>
+                DESENVOLVIMENTO DE UM SISTEMA DE MONITORAMENTO DO CONSUMO DE ÁGUA UTILIZANDO SENSORES DE ARDUINO E APLICATIVO MÓVEL.
+            </p>
+            <p>
+                Dada a dificuldade de monitoramento específico do uso da água e o desperdício da mesma, surge a necessidade de inovar em uma ideia capaz de auxiliar na economia desse recurso precioso.
+            </p>
+            <p>
+                O Projeto visa criar um sistema de monitoramento de água utilizando sensores de Arduino, que transmitem os dados coletados pelo mesmo, afim de que os usuários tenham maior controle sobre o que é diretamente utilizado de modo isolado, como, por exemplo, um cômodo especifico, chuveiro ou torneira, visando sempre a inovação e sustentabilidade.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" ry="5" stroke="currentColor" fill="none" rx="10"/>
+                        <line x1="1" x2="12" y2="12" stroke="currentColor" y1="5"/>
+                        <line y2="12" stroke="currentColor" x1="23" x2="12" y1="5"/>
+                    </svg>
+                <span id="name">E-mail</span>
+                </a>
+                <span id="msg">Envie-nos um e-mail!</span>
+            </div>
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" rx="5" ry="5" stroke="currentColor" fill="none"/>
+                        <circle cx="12" cy="12" r="5.75" stroke="currentColor" fill="none"/>
+                        <circle cx="19.5" cy="6.25" r="1.75" fill="currentColor"/>
+                    </svg>
+                <span id="name">Instagram</span>
+                </a>
+                <span id="msg">Envie-nos uma mensagem!</span>
+            </div>
+            <!-- Inserir informações básicas de contato -->
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

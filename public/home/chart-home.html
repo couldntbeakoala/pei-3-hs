@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- PÁGINA DE LISTAGEM DE GRÁFICOS -->
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/home-assets.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Página principal</title>
+    </head>
+    <body>
+
+        <!-- 
+        O que estiver com a classe "mobile" só aparece no mobile (especificado, no caso, como telas com largura menor que 1020px)
+        O que estiver com a classe "desktop" só aparece no desktop (especificado, no caso, como telas com largura maior que 1020px)
+        Caso haja necessidade de ajuste, observar o media query (@media...) no CSS.
+        -->
+
+        <div class="nav" id="nav-desktop">
+            <!-- Abrir modal (barra de navegação para telas menores) em barra de navegação adaptada para telas maiores -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-open">...</strong>
+            </div>
+            <ul class="nav-list desktop">
+                <li><a class="" href="/index.html">Página principal</a></li>
+                <li><a class="logged" href="#">Logado como <strong>Pessoa</strong></a></li>
+                <!-- Adicionar interação em que o nome de usuário substituirá "Pessoa", no caso; e clicando, aparecerá opções: configurações e sair -->
+            </ul>
+            <h1>HidroSmart</h1>
+        </div>
+
+        <div class="mobile closed" id="nav-mobile">
+            <!-- Fechar modal (barra de navegação para telas menores) -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-close">X</strong>
+            </div>
+            <!-- Modal que aparecerá ao ser aberto -->
+            <div class="dropdownMenu" id="dropdownMenu">
+                <h1>HidroSmart</h1>
+                <ul class="nav-list mobile" id="dropdown-content">
+                    <li><a class="active" href="/index.html">Página principal</a></li>
+                    <li><a class="logged" href="#">Logado como <strong>Pessoa</strong></a></li>
+                    <!-- Adicionar interação em que o nome de usuário substituirá "Pessoa", no caso; em que ao clicar, aparecerá as opções: configurações e sair -->
+                </ul>
+             </div>
+        </div>
+        <div class="container">
+
+            <!-- Início das Opções -->
+            <div class="options-container">
+                <button class="btn" role="button">3 Dias</button>
+                <button class="btn" role="button">1 Semana</button>
+                <button class="btn" role="button">Opção 3</button>
+                <button class="btn" role="button">Opção 4</button>
+            </div>
+            <!-- Fim das Opções -->
+
+            <!-- Início da Tabela com as informações e seus respectivos dados -->
+            <div class="table-container">
+                <img src="/.img/placeholder.jpg" width="100%" height="50%"/>
+                <!-- Início da apresentação dos dados dos registros mais recentes ao usuário -->
+                <div class="options-container">
+                    <button class="btn" role="button">Detalhes</button>
+                </div>
+                <h2>Dados do Gráfico Tal</h2>
+                <ul class="table-content">
+                    <li class="table-header">
+                        <div class="col col-1">Informação #1</div>
+                        <div class="col col-2">Informação #2</div>
+                        <div class="col col-3">Informação #3</div>
+                        <div class="col col-4">Informação #4</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Informação #1">Dado #1</div>
+                        <div class="col col-2" data-label="Informação #2">Dado #2</div>
+                        <div class="col col-3" data-label="Informação #3">Dado #3</div>
+                        <div class="col col-4" data-label="Informação #4">Dado #4</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Informação #1">Dado #1</div>
+                        <div class="col col-2" data-label="Informação #2">Dado #2</div>
+                        <div class="col col-3" data-label="Informação #3">Dado #3</div>
+                        <div class="col col-4" data-label="Informação #4">Dado #4</div>
+                    </li>
+                </ul>
+                <!-- Fim da apresentação dos dados dos registros mais recentes ao usuário -->
+        </div>
+        <!-- Fim da Tabela com as informações e seus respectivos dados -->
+        <div class="footer">
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" ry="5" stroke="currentColor" fill="none" rx="10"/>
+                        <line x1="1" x2="12" y2="12" stroke="currentColor" y1="5"/>
+                        <line y2="12" stroke="currentColor" x1="23" x2="12" y1="5"/>
+                    </svg>
+                <span id="name">E-mail</span>
+                </a>
+                <span id="msg">Envie-nos um e-mail!</span>
+            </div>
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" rx="5" ry="5" stroke="currentColor" fill="none"/>
+                        <circle cx="12" cy="12" r="5.75" stroke="currentColor" fill="none"/>
+                        <circle cx="19.5" cy="6.25" r="1.75" fill="currentColor"/>
+                    </svg>
+                <span id="name">Instagram</span>
+                </a>
+                <span id="msg">Envie-nos uma mensagem!</span>
+            </div>
+            <!-- Inserir informações básicas de contato -->
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="../js/home-assets.js"></script>
+    </body>
+</html>

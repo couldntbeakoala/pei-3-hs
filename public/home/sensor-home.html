@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- PÁGINA DE LISTAGEM DE SENSORES -->
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/home-assets.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Página principal</title>
+    </head>
+    <body>
+
+        <!-- 
+        O que estiver com a classe "mobile" só aparece no mobile (especificado, no caso, como telas com largura menor que 1020px)
+        O que estiver com a classe "desktop" só aparece no desktop (especificado, no caso, como telas com largura maior que 1020px)
+        Caso haja necessidade de ajuste, observar o media query (@media...) no CSS.
+        -->
+
+        <div class="nav" id="nav-desktop">
+            <!-- Abrir modal (barra de navegação para telas menores) em barra de navegação adaptada para telas maiores -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-open">...</strong>
+            </div>
+            <ul class="nav-list desktop">
+                <li><a class="" href="/index.html">Página principal</a></li>
+                <li><a class="logged" href="#">Logado como <strong>Pessoa</strong></a></li>
+                <!-- Adicionar interação em que o nome de usuário substituirá "Pessoa", no caso; e clicando, aparecerá opções: configurações e sair -->
+            </ul>
+            <h1>HidroSmart</h1>
+        </div>
+
+        <div class="mobile closed" id="nav-mobile">
+            <!-- Fechar modal (barra de navegação para telas menores) -->
+            <div class="mobile navbarBtn" id="navBtn">
+                <strong id="nav-menu-close">X</strong>
+            </div>
+            <!-- Modal que aparecerá ao ser aberto -->
+            <div class="dropdownMenu" id="dropdownMenu">
+                <h1>HidroSmart</h1>
+                <ul class="nav-list mobile" id="dropdown-content">
+                    <li><a class="" href="/index.html">Página principal</a></li>
+                    <li><a class="logged" href="#">Logado como <strong>Pessoa</strong></a></li>
+                    <!-- Adicionar interação em que o nome de usuário substituirá "Pessoa", no caso; em que ao clicar, aparecerá as opções: configurações e sair -->
+                </ul>
+             </div>
+        </div>
+        <div class="container">
+            
+            <!-- Início da lista dos sensores existentes, com opção de configurar o sensor ou excluí-lo (gráfico deixa de incluí-lo) -->
+
+            <h2>Lista de Sensores</h2>
+              <button class="btn add-sensor-btn">Adicionar Sensor</button>
+            
+              <ul class="sensor-list">
+                <!-- Sensores existentes serão adicionados aqui -->
+                  
+              </ul>
+
+              <hr>
+              <button class="btn total-graph-btn">Gráfico Total</button>
+
+              <!-- Modal para adicionar um novo sensor -->
+              <div class="sensor-modal" id="add-sensor-modal">
+                <div class="sensor-content">
+                  <span class="close">&times;</span>
+                  <h3>Adicionar Sensor</h3>
+                  <form id="add-sensor-form">
+                    <label for="sensor-name">Nome do Sensor:</label>
+                    <input type="text" id="sensor-name" placeholder="Recomendamos um nome auto-explicativo." required>
+                    <label for="sensor-description">Descrição:</label>
+                    <textarea id="sensor-description" placeholder="Explique melhor sobre o sensor."></textarea>
+                    <button class="btn" type="submit">Adicionar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Fim da lista dos sensores existentes, com opção de configurar o sensor ou excluí-lo (gráfico deixa de incluí-lo) -->
+        <div class="footer">
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" ry="5" stroke="currentColor" fill="none" rx="10"/>
+                        <line x1="1" x2="12" y2="12" stroke="currentColor" y1="5"/>
+                        <line y2="12" stroke="currentColor" x1="23" x2="12" y1="5"/>
+                    </svg>
+                <span id="name">E-mail</span>
+                </a>
+                <span id="msg">Envie-nos um e-mail!</span>
+            </div>
+            <div class="footer_item">
+                <a href="#">
+                    <!-- Inserir link correspondente -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="1" y="1" width="22" height="22" rx="5" ry="5" stroke="currentColor" fill="none"/>
+                        <circle cx="12" cy="12" r="5.75" stroke="currentColor" fill="none"/>
+                        <circle cx="19.5" cy="6.25" r="1.75" fill="currentColor"/>
+                    </svg>
+                <span id="name">Instagram</span>
+                </a>
+                <span id="msg">Envie-nos uma mensagem!</span>
+            </div>
+            <!-- Inserir informações básicas de contato -->
+        </div>
+        <script src="../js/script.js"></script>
+        <script src="../js/sensor-assets.js"></script>
+        <script src="../js/home-assets.js"></script>
+    </body>
+</html>
