@@ -6,7 +6,7 @@
   "functions": {
     "api/index.js": {
       "memory": 3009,
-      "schedule": ["0 * * * *"]
+      "maxDuration": 1600
     }
   "builds": [
     {
