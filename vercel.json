@@ -2,5 +2,8 @@
   "version": 2,
   "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "framework": "nodejs",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "scripts": {
+    "start": "node index.js"
+  }
 }
