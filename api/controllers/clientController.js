@@ -46,7 +46,8 @@ module.exports = class clientController {
         return res.status(500).json({ auth:false, message: "Falha na autenticação com o token!" });
 
       // Salvar no request para uso posterior:
-      res.json({ token, id, name: existentClient.name });
+      // res.json({ token, id, name: existentClient.name });
+      res.redirect("/home.html");
       req.clientId = decoded.id;
       next();
     });
